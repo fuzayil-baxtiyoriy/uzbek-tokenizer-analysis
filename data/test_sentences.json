@@ -28,5 +28,95 @@
     "uz_latn": "Moliya vazirligi yangi qaror qabul qildi.",
     "uz_cyrl": "Молия вазирлиги янги қарор қабул қилди.",
     "en": "The Ministry of Finance adopted a new decision."
+  },
+  {
+    "id": 6,
+    "uz_latn": "Kechqurun oilam bilan birga choy ichamiz.",
+    "uz_cyrl": "Кечқурун оилам билан бирга чой ичамиз.",
+    "en": "In the evening we drink tea together with my family."
+  },
+  {
+    "id": 7,
+    "uz_latn": "Bozordan non, sut va mevalar sotib oldim.",
+    "uz_cyrl": "Бозордан нон, сут ва мевалар сотиб олдим.",
+    "en": "I bought bread, milk and fruit at the market."
+  },
+  {
+    "id": 8,
+    "uz_latn": "Ukam maktabga avtobusda boradi.",
+    "uz_cyrl": "Укам мактабга автобусда боради.",
+    "en": "My younger brother goes to school by bus."
+  },
+  {
+    "id": 9,
+    "uz_latn": "Dam olish kunlari tog'ga sayohatga chiqmoqchimiz.",
+    "uz_cyrl": "Дам олиш кунлари тоғга саёҳатга чиқмоқчимиз.",
+    "en": "We want to take a trip to the mountains at the weekend."
+  },
+  {
+    "id": 10,
+    "uz_latn": "O'zbekiston Respublikasi Prezidentining farmoni e'lon qilindi.",
+    "uz_cyrl": "Ўзбекистон Республикаси Президентининг фармони эълон қилинди.",
+    "en": "The decree of the President of the Republic of Uzbekistan was announced."
+  },
+  {
+    "id": 11,
+    "uz_latn": "Fuqarolar murojaatlari belgilangan muddatda ko'rib chiqilishi shart.",
+    "uz_cyrl": "Фуқаролар мурожаатлари белгиланган муддатда кўриб чиқилиши шарт.",
+    "en": "Citizens' appeals must be reviewed within the established time limit."
+  },
+  {
+    "id": 12,
+    "uz_latn": "Ushbu qaror rasmiy e'lon qilingan kundan boshlab kuchga kiradi.",
+    "uz_cyrl": "Ушбу қарор расмий эълон қилинган кундан бошлаб кучга киради.",
+    "en": "This resolution enters into force on the day of its official publication."
+  },
+  {
+    "id": 13,
+    "uz_latn": "Vazirlar Mahkamasi hududlarni rivojlantirish dasturini tasdiqladi.",
+    "uz_cyrl": "Вазирлар Маҳкамаси ҳудудларни ривожлантириш дастурини тасдиқлади.",
+    "en": "The Cabinet of Ministers approved the regional development program."
+  },
+  {
+    "id": 14,
+    "uz_latn": "Ma'lumotlar bazasiga ulanib bo'lmadi.",
+    "uz_cyrl": "Маълумотлар базасига уланиб бўлмади.",
+    "en": "Could not connect to the database."
+  },
+  {
+    "id": 15,
+    "uz_latn": "Dasturchi kodni GitHub omboriga yukladi.",
+    "uz_cyrl": "Дастурчи кодни GitHub омборига юклади.",
+    "en": "The developer pushed the code to the GitHub repository."
+  },
+  {
+    "id": 16,
+    "uz_latn": "Neyron tarmoq katta hajmdagi matnlar asosida o'qitiladi.",
+    "uz_cyrl": "Нейрон тармоқ катта ҳажмдаги матнлар асосида ўқитилади.",
+    "en": "The neural network is trained on large volumes of text."
+  },
+  {
+    "id": 17,
+    "uz_latn": "Ilovani yangilash uchun internetga ulanish talab etiladi.",
+    "uz_cyrl": "Иловани янгилаш учун интернетга уланиш талаб этилади.",
+    "en": "An internet connection is required to update the application."
+  },
+  {
+    "id": 18,
+    "uz_latn": "Uchrashuv 2024-yil 15-mart kuni soat 14:30 da bo'ladi.",
+    "uz_cyrl": "Учрашув 2024-йил 15-март куни соат 14:30 да бўлади.",
+    "en": "The meeting will take place on 15 March 2024 at 14:30."
+  },
+  {
+    "id": 19,
+    "uz_latn": "Mahsulot narxi 1 250 000 so'm, chegirma esa 15 foiz.",
+    "uz_cyrl": "Маҳсулот нархи 1 250 000 сўм, чегирма эса 15 фоиз.",
+    "en": "The product costs 1,250,000 soums, and the discount is 15 percent."
+  },
+  {
+    "id": 20,
+    "uz_latn": "Kompaniya 2023-yilda 3,5 million dollar daromad oldi.",
+    "uz_cyrl": "Компания 2023-йилда 3,5 миллион доллар даромад олди.",
+    "en": "The company earned 3.5 million dollars in revenue in 2023."
   }
 ]
