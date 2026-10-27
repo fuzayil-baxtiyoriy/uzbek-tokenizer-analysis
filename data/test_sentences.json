@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "uz_latn": "Men har kuni ertalab kitob o'qiyman.",
+    "uz_cyrl": "Мен ҳар куни эрталаб китоб ўқийман.",
+    "en": "I read a book every morning."
+  },
+  {
+    "id": 2,
+    "uz_latn": "Toshkent O'zbekistonning poytaxti.",
+    "uz_cyrl": "Тошкент Ўзбекистоннинг пойтахти.",
+    "en": "Tashkent is the capital of Uzbekistan."
+  },
+  {
+    "id": 3,
+    "uz_latn": "Sun'iy intellekt dasturchilarga yordam bermoqda.",
+    "uz_cyrl": "Сунъий интеллект дастурчиларга ёрдам бермоқда.",
+    "en": "Artificial intelligence is helping programmers."
+  },
+  {
+    "id": 4,
+    "uz_latn": "Bugun havo juda issiq bo'ladi.",
+    "uz_cyrl": "Бугун ҳаво жуда иссиқ бўлади.",
+    "en": "The weather will be very hot today."
+  },
+  {
+    "id": 5,
+    "uz_latn": "Moliya vazirligi yangi qaror qabul qildi.",
+    "uz_cyrl": "Молия вазирлиги янги қарор қабул қилди.",
+    "en": "The Ministry of Finance adopted a new decision."
+  }
+]

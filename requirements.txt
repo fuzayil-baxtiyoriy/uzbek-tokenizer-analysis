@@ -1,0 +1,6 @@
+tiktoken
+transformers
+tokenizers
+datasets
+torch
+matplotlib
