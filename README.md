@@ -33,15 +33,18 @@ Uzbek is written in both **Latin** and **Cyrillic** scripts, so both are compare
 
 ## Results
 
-_Coming soon._
+Fertility on the 20-sentence parallel test set ([data/test_sentences.json](data/test_sentences.json)).
+Reproduce with `python src/compare_tokenizers.py`.
 
-| Tokenizer | English | Uzbek (Latin) | Uzbek (Cyrillic) |
-|---|---|---|---|
-| gpt2 | – | – | – |
-| cl100k_base | – | – | – |
-| o200k_base | – | – | – |
-| Qwen | – | – | – |
-| uz-bpe-16k (ours) | – | – | – |
+![Tokenizer fertility: English vs Uzbek](results/fertility_chart.png)
+
+| Tokenizer | English | Uzbek (Latin) | Uzbek (Cyrillic) | uz-Latin / en | uz-Cyrillic / en |
+|---|---|---|---|---|---|
+| gpt2 | 1.22 | 3.34 | 8.33 | 2.73× | 6.82× |
+| cl100k_base | 1.27 | 3.21 | 4.96 | 2.53× | 3.92× |
+| o200k_base | 1.25 | 2.69 | 2.84 | 2.15× | 2.27× |
+| qwen2.5 | 1.33 | 3.29 | 4.15 | 2.47× | 3.11× |
+| uz-bpe-16k (ours) | – | – | – | – | – |
 
 ## Key findings
 
