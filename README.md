@@ -38,6 +38,10 @@ Reproduce with `python src/compare_tokenizers.py`.
 
 ![Tokenizer fertility: English vs Uzbek](results/fertility_chart.png)
 
+*Fertility (tokens per word) for each tokenizer. The dashed line at 1.0 is the ideal: one token per word.
+English stays close to it (~1.2–1.3), while Uzbek needs 2–3× more tokens in Latin script
+and up to 6.8× more in Cyrillic (GPT-2). `o200k_base` handles Uzbek best, but the gap is still over 2×.*
+
 | Tokenizer | English | Uzbek (Latin) | Uzbek (Cyrillic) | uz-Latin / en | uz-Cyrillic / en |
 |---|---|---|---|---|---|
 | gpt2 | 1.22 | 3.34 | 8.33 | 2.73× | 6.82× |
