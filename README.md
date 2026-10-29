@@ -21,9 +21,9 @@ Uzbek is written in both **Latin** and **Cyrillic** scripts, so both are compare
 
 | Part | Description | Status |
 |---|---|---|
-| 1. Data | Uzbek Wikipedia subset + parallel test set (uz-Latin / uz-Cyrillic / English) | ⬜ |
-| 2. Benchmark | Compare existing tokenizers (`gpt2`, `cl100k_base`, `o200k_base`, Qwen, Llama) | ⬜ |
-| 3a. BPE from scratch | Minimal byte-pair encoding implementation in pure Python | ⬜ |
+| 1. Data | Uzbek Wikipedia subset + parallel test set (uz-Latin / uz-Cyrillic / English) | ✅ |
+| 2. Benchmark | Compare existing tokenizers (`gpt2`, `cl100k_base`, `o200k_base`, Qwen, Llama) | ✅ |
+| 3a. BPE from scratch | Minimal byte-pair encoding implementation in pure Python | 🟡 |
 | 3b. Custom tokenizer | Train Uzbek BPE tokenizers (8k / 16k / 32k vocab) with HF `tokenizers` | ⬜ |
 | 4. Pipeline | Sliding-window dataset → token embeddings → positional embeddings (PyTorch) | ⬜ |
 
@@ -49,6 +49,29 @@ and up to 6.8× more in Cyrillic (GPT-2). `o200k_base` handles Uzbek best, but t
 | o200k_base | 1.25 | 2.69 | 2.84 | 2.15× | 2.27× |
 | qwen2.5 | 1.33 | 3.29 | 4.15 | 2.47× | 3.11× |
 | uz-bpe-16k (ours) | – | – | – | – | – |
+
+### BPE from scratch (Part 3a)
+
+A minimal byte-level BPE in pure Python ([src/bpe_from_scratch.py](src/bpe_from_scratch.py)),
+trained on 200k characters of Uzbek Wikipedia (Latin script). Reproduce with `python src/bpe_from_scratch.py`.
+
+| Tokenizer | Vocab | English | Uzbek (Latin) | Uzbek (Cyrillic) |
+|---|---|---|---|---|
+| gpt2 | 50,257 | 1.22 | 3.34 | 8.33 |
+| BPE, 50 merges | 306 | 5.02 | 5.47 | 13.51 |
+| BPE, 500 merges | 756 | 3.92 | 3.73 | 12.60 |
+
+- **BPE rediscovers Uzbek grammar.** Among the first merges are suffixes: `lar` (plural), `da ` / `ga ` / `dan `
+  (case endings), `ing` (genitive), plus the letters `oʻ`, `gʻ`. Uzbek is agglutinative (stem + suffixes),
+  and pure frequency counting is enough to find that structure.
+- **The training data decides, not the language.** Trained on Uzbek, our BPE is better on Uzbek than on
+  English (3.73 vs 3.92) — the opposite of GPT-2.
+- **A 66× smaller vocab is already close to GPT-2** on Uzbek Latin (3.73 vs 3.34 with 756 vs 50,257 tokens).
+- **Script and apostrophe mismatches hurt.** Cyrillic stays poor (12.60) because the training text is Latin.
+  Wikipedia writes `oʻ` with `ʻ` (U+02BB) while the test set uses `'` (U+0027), so learned merges do not fire —
+  apostrophe normalization is planned for Part 3b.
+
+Full notes: [steps/STEP-04-bpe-from-scratch.md](steps/STEP-04-bpe-from-scratch.md).
 
 ## Key findings
 
